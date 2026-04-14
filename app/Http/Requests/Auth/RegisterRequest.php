@@ -88,7 +88,7 @@ class RegisterRequest extends FormRequest
                 "success" => false,
                 "data" => null,
                 "errors" => $errors,
-            ]),
+            ],422),
         );
     }
 }

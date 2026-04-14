@@ -19,7 +19,7 @@ class AuthController extends Controller
             $validation = $registerRequest->validated();
             $dataDTO = new RegisterDTO($validation);
             $user = $this->register_service_interface->register($dataDTO);
-            return $this->success($user, 200);
+            return $this->success($user, 201);
         } catch (\Exception $e) {
             return $this->errors($e->getMessage(), 422);
         }
