@@ -39,7 +39,7 @@ class RegisterRequest extends FormRequest
             "phone" => [
                 "required",
                 "unique:users,phone",
-                "regex:/^01[0-2,5]{1}[0-9]{8}$/",
+                "regex:/^01(0|1|2|5)[0-9]{8}$/",
             ],
             "password" => [
                 "required",

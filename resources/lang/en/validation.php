@@ -22,6 +22,11 @@ return [
         'unique' => 'Phone number already exists',
     ],
 
+    'login' => [
+        'required' => 'data enter is required',
+        'invald' => 'invalid credintial',
+    ],
+
     'password' => [
         'required' => 'Password is required',
         'confirmed' => 'Password confirmation does not match',
