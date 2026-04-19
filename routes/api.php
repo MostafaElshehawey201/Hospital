@@ -8,5 +8,6 @@ Route::prefix('v1')->group(function(){
 Route::prefix('Auth')->middleware('Lang')->group(function(){
     Route::post('register' , [AuthController::class,'register'])->name('register');
     Route::post('login' , [AuthController::class , 'login'])->name('login');
+    Route::post('request-otp' , [AuthController::class, 'request_otp']);
     });
 });
